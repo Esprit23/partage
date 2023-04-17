@@ -1,0 +1,22 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "electron": "^24.1.0"
+  },
+  "dependencies": {
+    "screenshot-desktop": "0.0.0-development",
+    "socket.io-client": "^4.6.1",
+    "uuid": "^9.0.0"
+  }
+}

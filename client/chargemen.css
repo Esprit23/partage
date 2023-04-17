@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: #000;
+
+}
+.centr{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.ring{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+    
+    
+}
+@keyframes ring{
+    0%{
+        transform: rotate(0deg);
+        box-shadow:1px 5px 2px #e63600 ;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow:1px 5px 2px #01b24e ;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow:1px 5px 2px #023e92 ;
+    }
+}
+.ring:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+}
+span{
+    color:royalblue;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 200px;
+    animation: texte 3s ease-in-out infinite;
+    z-index: 10000;
+}
+a{
+    color:royalblue;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration-style: none;
+    line-height: 200px;
+    animation: texte 3s ease-in-out infinite;
+    z-index: 10000;
+}
+@keyframes texte {
+    0%{
+        color: rgb(202, 77, 77);
+    }
+    50%{
+        color:rgb(192, 30, 103);
+    }
+    
+    90%{
+        color: rgb(158, 69, 213);
+    }
+    95%{
+        color: rgb(161, 93, 145);
+    }
+    100%{
+        color: rgb(201, 88, 118);
+    }
+
+
+}
